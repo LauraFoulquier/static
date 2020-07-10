@@ -5,7 +5,7 @@ pipeline {
             steps {
                 withAWS(region:'eu-west-1', credentials:'aws-static')
                 {
-                    s3upload(file:"index.html", bucket:"pipeline-udacity")
+                    s3Upload(file:"index.html", bucket:"pipeline-udacity")
                 }
             }
         }
